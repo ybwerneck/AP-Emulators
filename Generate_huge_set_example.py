@@ -11,7 +11,7 @@ ti = 0
 tf = 500
 dt = 0.01
 dtS = 1
-sample_size = 100000  # Increase sample size
+sample_size = 5000  # Increase sample size
 
 # Function to extract QOIs from model output
 def extract_qois(results):
@@ -46,7 +46,7 @@ qois_B = extract_qois(results_B)
 qois_C = extract_qois(results_C)
 
 # Create directory for saving results
-output_dir = "Generated_Data"
+output_dir = "Generated_Data_5K"
 os.makedirs(output_dir, exist_ok=True)
 
 # Save data for Model A
